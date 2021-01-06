@@ -1,3 +1,3 @@
 #Python example problems from leetcode
 
-Learning part.
+Learning part 1.
