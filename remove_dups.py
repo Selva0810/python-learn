@@ -16,10 +16,10 @@ class Solution:
             if nums[i] != nums[i - 1]:
                 nums[len_] = nums[i]
                 len_ += 1
-        print (nums)
+        print(nums)
         return len_
 
-nums = [0,0,1,1,1,2,2,3,3,4]
-s = Solution()
-print (s.removeDuplicates(nums))
 
+nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+s = Solution()
+print(s.removeDuplicates(nums))
