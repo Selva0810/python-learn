@@ -25,7 +25,7 @@ class Solution:
         check = 0
         print (x)
         if x < 0:
-            print ("why")
+            print("why")
             check = 1
         n = abs(x)
         while n > 0:
@@ -45,6 +45,6 @@ class Solution:
 s = Solution()
 
 
-x = 1534236469
+x = 432
 print(s.reverse(x))
 

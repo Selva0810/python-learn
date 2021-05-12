@@ -1,4 +1,3 @@
-
 '''
 Given two strings s and t , write a function to determine if t is an anagram of s.
 
@@ -10,6 +9,11 @@ Output: true
 from typing import List
 
 from collections import defaultdict
+
+import string
+
+print(string.ascii_letters)
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
 
@@ -24,8 +28,8 @@ class Solution:
         for j in t:
             d2[j] += 1
 
-        print (d1,d2)
-        for k,w in d1.items():
+        print(d1, d2)
+        for k, w in d1.items():
             if k in d2:
                 if d1[k] != d2[k]:
                     return False
@@ -39,7 +43,7 @@ class Solution:
 
     def isAnagram2(self, s: str, t: str) -> bool:
 
-        if (len(s) != len(t)):
+        if len(s) != len(t):
             return False
 
         for c in set(s[:]):
@@ -53,8 +57,8 @@ soln = Solution()
 
 s = "anagram"
 t = "nagaram"
-print(soln.isAnagram(s,t))
+print(soln.isAnagram(s, t))
 
-print(soln.isAnagram1(s,t))
+print(soln.isAnagram1(s, t))
 
-print(soln.isAnagram2(s,t))
+print(soln.isAnagram2(s, t))

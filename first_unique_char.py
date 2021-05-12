@@ -1,4 +1,3 @@
-
 '''
 Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
 
@@ -26,9 +25,9 @@ class Solution:
             else:
                 uniq[n] = 1
 
-        print (uniq)
-        for k,w in uniq.items():
-            if w ==1:
+        print(uniq)
+        for k, w in uniq.items():
+            if w == 1:
                 return s.index(k)
         return -1
 
@@ -38,10 +37,9 @@ class Solution:
                 return s.index(x)
         return -1
 
+
 s = Solution()
 
 s1 = "csdfxcs"
 print(s.firstUniqChar(s1))
 print(s.firstUniqChar1(s1))
-
-

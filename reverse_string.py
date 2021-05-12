@@ -1,4 +1,3 @@
-
 '''
   Reverse String
 Write a function that reverses a string. The input string is given as an array of characters char[].
@@ -23,20 +22,15 @@ class Solution:
         Do not return anything, modify s in-place instead.
         """
         start = 0
-        end = len(s)-1
-        while start<end:
-            s[start],s[end] = s[end],s[start]
-            start +=1
-            end -=1
-        print (word)
-
-
-
+        end = len(s) - 1
+        while start < end:
+            s[start], s[end] = s[end], s[start]
+            start += 1
+            end -= 1
+        print(word)
 
 
 s = Solution()
 
-
-word = ["h","e","l","l","o"]
+word = ["h", "e", "l", "l", "o"]
 print(s.reverseString(word))
-

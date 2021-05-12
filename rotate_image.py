@@ -1,4 +1,3 @@
-
 '''
 You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
 
@@ -22,12 +21,14 @@ class Solution:
 
         # reverse each row
         for i in range(n):
-            print (matrix[i])
+            print(matrix[i])
             matrix[i].reverse()
-        print (matrix)
+        print(matrix)
+
 
 s = Solution()
 
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(s.rotate(matrix))
 
+print(list(zip(*matrix)))

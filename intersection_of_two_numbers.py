@@ -32,6 +32,7 @@ class Solution:
                 hash_map[nums1[i]] += 1
             else:
                 hash_map.update({nums1[i]: 1})
+        print(hash_map)
         for i in range(len(nums2)):
             if nums2[i] in hash_map.keys():
                 intersection.append(nums2[i])
